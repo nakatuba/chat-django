@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["nakatuba <nakatuba0626@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0.5"
+django-cors-headers = "^3.13.0"
+django-environ = "^0.9.0"
+djangorestframework = "^3.13.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+django-stubs = "^1.12.0"
+djangorestframework-stubs = "^1.7.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+skip-string-normalization = true
